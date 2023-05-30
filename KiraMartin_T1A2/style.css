@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bitter;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Bitter;
+}
+
+/*---About me-------------------------------*/
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.blog-heading span{
+    color: #01510e;
+}
+.blog-heading h1{
+    font-size: 3.0rem;
+    color: #01510e;
+    font-weight: 700;
+}
