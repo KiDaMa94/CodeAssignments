@@ -29,7 +29,14 @@ body {
     color: #01510e;
 }
 .blog-heading h1{
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     color: #01510e;
     font-weight: 700;
+}
+.blog-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px 10px;
+flex-wrap: wrap;
 }
