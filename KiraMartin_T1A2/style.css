@@ -94,3 +94,26 @@ flex-wrap: wrap;
     color:rgb(175, 238, 183);
     transition: all ease 0.3s;
 }
+
+/*----------Contacts-----------------------------------------------------*/
+#contacts{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.contact-container{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 20% 0px;
+    flex-wrap: wrap;
+}
+.contact-box {
+    width: 500px;
+    background-color: #0a0f0b;
+    border: 1px solid #162018;
+    margin: 10px;
+}
