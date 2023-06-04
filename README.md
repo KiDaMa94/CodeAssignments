@@ -1,7 +1,7 @@
 Kira Martin_T1A2
-Link to (URL)
-Link to GitHub repo 
-Link to presentation Video
+Link to: https://main--legendary-pony-079df8.netlify.app/
+Link to GitHub repo: https://github.com/KiDaMa94/CodeAssignments 
+Link to presentation Video: https://vimeo.com/manage/videos/833022140?embedded=false&source=video_title&owner=38650398
 
 Purpose: To become visible to future employers and showcase what I can do.
 
