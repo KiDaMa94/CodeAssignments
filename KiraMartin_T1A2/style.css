@@ -14,7 +14,7 @@ body {
     margin: 0%;
     padding: 0%;
     font-family: Bitter;
-    background-image: linear-gradient(90deg,#02410d,#0a0f0b);
+    background-color:#959795;
 }
 
 /*---About me-------------------------------*/
@@ -27,11 +27,12 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 .blog-heading span{
-    color: #e3f1e6;
+    color: #313d35;
+    font-size: 3rem;
 }
 .blog-heading h1{
-    font-size: 4.0rem;
-    color: #ecf3ee;
+    font-size: 6.0rem;
+    color: #313d35;
     font-weight: 700;
 }
 .blog-container{
@@ -78,7 +79,7 @@ flex-wrap: wrap;
 }
 .blog-text p{
     color: #ecf3ee;
-    font-size: 2rem;
+    font-size: 1rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -95,25 +96,302 @@ flex-wrap: wrap;
     transition: all ease 0.3s;
 }
 
-/*----------Contacts-----------------------------------------------------*/
-#contacts{  
+/*-----Contact-------*/
+#contact{
+    padding: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding: 5%;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-.contact-container{
+.contact-info{
+    color: #162018;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+.contact-info i{
+    margin-right: 10%;
+    font-size: 3rem;
+}
+.contact-info i:hover{
+    background: #2f4434;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-form h2{
+    color: #313d35;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20%;
+}
+.contact-form .text-box{
+    background: #191f1b;
+    color: #313d35;
+    border: 1px;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 1;
+}
+/*--------gap inbetween boxes---------*/
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+.contact-form textarea{
+    background: #191f1b;
+    color: #313d35;
+    border: 1px;
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+    min-height: 300px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 1;
+}
+.contact-form .send-btn{
+    float: left;
+    background: #959795;
+    color: #191f1b;
+    border: 1px;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.contact-form .send-btn:hover{
+    background: #e3f1e6;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px){
+    #contact{
+        flex-direction: column;
+    }
+}
+
+/*-----------Resume----------------*/
+.resume-container{ 
+    background-color: #0a0f0b;
+    width: 900px;
+    max-width: 100%;
+    margin: 1% auto;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #313d35;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 5%;
+    row-gap: 30px;
+}
+.profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile{
     display: flex;
     justify-content: right;
-    align-items: right;
-    margin: 20% 0px;
-    flex-wrap: wrap;
 }
-.contact-box {
+.name{
+    padding: 20px;
+    margin: auto;
+}
+.name{
+    line-height: 40px;
+}
+.name h1{
+    color: #e3f1e6;
+    font-size: 2.5rem;
+}
+.name .specialize{
+    color: #e3f1e6;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.name a{
+    color: #e3f1e6;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.name a:hover{
+    color:rgb(175, 238, 183);
+    transition: all ease 0.3s;
+}
+.info{
+    color: #e3f1e6;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+.info ul li::before{
+    content: "\2022";
+    color: #959795;
+    font-weight: 800;
+    display: inline-block;
+    width: 1rem;
+}
+.info ul{
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+    line-height: 22px;
+}
+.intro{
+    padding-left: 30px;
+    color: #e3f1e6;
+    border-left: 2px solid #959795;
+    text-align: justify;
+}
+.intro h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 0 20px;
+    
+}
+.into p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: left;
+    line-height: 65px;
+}
+.exp{
+    color: #e3f1e6;
+    text-align: right;
+    margin: 0 0 20px;
+}
+.exp span{
+    line-height: 45px;
+}
+.skills{
+    color: #e3f1e6;
+}
+.skills ul li::before{
+    content: "\2022";
+    color: #959795;
+    font-weight: 800;
+    display: inline-block;
+    width: 1rem;
+    line-height: 25px;
+}
+.skills h3{
+    padding-top: 10px;
+}
+.skills p{
+    line-height: 25px;
+}
+
+
+/*-------Example-filler------------------------------*/
+#exam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    margin: 0 0 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.exam-heading{
+    font-size: 2.5rem;
+    margin: 2% auto;
+    display: flex;
+    padding-left: 80px;
+    color: #e3f1e6;
+}
+
+.exam-container{
+display: flex;
+justify-content: center;
+align-items: right;
+margin: 5% 0px;
+flex-wrap: wrap;
+}
+.exam-box{
     width: 500px;
     background-color: #0a0f0b;
     border: 1px solid #162018;
     margin: 10px;
+}
+.exam-img img{
+    width: 100%;
+    height: auto;
+}
+.exam-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.exam-text{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.exam-text span{
+    color: #ecf3ee;
+    font-size: 2rem;
+}
+
+.exam-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #ecf3ee;
+}
+.exam-text .blog-title:hover{
+    color: rgb(175, 238, 183);
+    transition: all ease 0.3s;
+}
+.exam-text p{
+    color: #ecf3ee;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20%;
+}
+.exam-text a{
+    color: #e3f1e6;
+    font-size: 1.2rem;
+}
+.exam-text a:hover{
+    color:rgb(175, 238, 183);
+    transition: all ease 0.3s;
+}
+
+/*----------NavBAr------------*/
+.menu{
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.logo{
+    color: #e3f1e6;
+}
+.nav ul li a{
+    color: #e3f1e6;
 }
